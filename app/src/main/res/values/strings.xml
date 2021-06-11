@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fit Calculator</string>
+
+    <string-array name="activity_list">
+        <item>Минимальные нагрузки</item>
+        <item>Легкие тренировки 3 раза в неделю</item>
+        <item>Тренировки 5 раз в неделю</item>
+        <item>Интенсивные тренировки 5 раз в неделю</item>
+        <item>Ежедневные тренировки</item>
+        <item>Тренировки 2 раза в день</item>
+        <item>Интенсивные тренировки 2 раза в день</item>
+    </string-array>
+    <string name="title_activity_calculate">CalculateActivity</string>
+</resources>
