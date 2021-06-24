@@ -1,10 +1,8 @@
 package net.iborodikhin.fitcalculator;
 
-/**
- * Created by iborodikhin on 6/10/21.
- */
-
 public class Constants {
+    private Constants() {}
+
     public static final String MESSAGE_HEIGHT = "net.iborodikhin.fitcalculator.MSG_HEIGHT";
     public static final String MESSAGE_WEIGHT = "net.iborodikhin.fitcalculator.MSG_WEIGHT";
     public static final String MESSAGE_AGE = "net.iborodikhin.fitcalculator.MSG_AGE";

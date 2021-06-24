@@ -6,72 +6,122 @@
     tools:context="net.iborodikhin.fitcalculator.MainActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <EditText
-        android:id="@+id/height"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:hint="Рост"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:hint="Возраст"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:hint="Желаемый вес"
-        android:inputType="number" />
-
-
-
-    <RadioGroup
-        android:id="@+id/gender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center_horizontal|center"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/gender_is_male"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="Мужчина" />
+            android:layout_margin="20dp"
+            android:text="Базовый расход (ккал)"/>
 
-        <RadioButton
-            android:id="@+id/gender_is_female"
+        <TextView
+            android:id="@+id/baseConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Женщина" />
-    </RadioGroup>
+            android:layout_margin="20dp"
+            android:text="Расход с учетом активности (ккал)"/>
 
-    <Spinner
-        android:id="@+id/activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:entries="@array/activity_list" />
+        <TextView
+            android:id="@+id/avgConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Общий калораж"/>
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Белков (гр)"/>
+
+        <TextView
+            android:id="@+id/proteins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Жиров (гр)"/>
+
+        <TextView
+            android:id="@+id/fats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Углеводов (гр)"/>
+
+        <TextView
+            android:id="@+id/carbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="%s"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/calculate"
+        android:id="@+id/edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Посчитать" />
+        android:text="Редактировать профиль" />
+
 </LinearLayout>
-
-
