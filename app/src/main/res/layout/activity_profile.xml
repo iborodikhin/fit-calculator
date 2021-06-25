@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -64,12 +65,14 @@
         android:layout_margin="20dp"
         android:entries="@array/activity_list" />
 
-    <Button
+    <ImageButton
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Сохранить" />
+        android:background="@drawable/rounded"
+        android:padding="5dp"
+        app:srcCompat="@android:drawable/ic_menu_save" />
 </LinearLayout>
 
 

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -21,13 +22,13 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        final Button button = (Button) this.findViewById(R.id.save);
-        final TextView height = (TextView) this.findViewById(R.id.height);
-        final TextView age = (TextView) this.findViewById(R.id.age);
-        final TextView weight = (TextView) this.findViewById(R.id.weight);
-        final RadioButton gender_is_male = (RadioButton) this.findViewById(R.id.gender_is_male);
-        final RadioButton gender_is_female = (RadioButton) this.findViewById(R.id.gender_is_female);
-        final Spinner activity = (Spinner) this.findViewById(R.id.activity);
+        final ImageButton button = findViewById(R.id.save);
+        final TextView height = findViewById(R.id.height);
+        final TextView age = findViewById(R.id.age);
+        final TextView weight = findViewById(R.id.weight);
+        final RadioButton gender_is_male = findViewById(R.id.gender_is_male);
+        final RadioButton gender_is_female = findViewById(R.id.gender_is_female);
+        final Spinner activity = findViewById(R.id.activity);
 
         try {
             Profile profile = readProfile();
