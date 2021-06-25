@@ -1,5 +1,7 @@
 package net.iborodikhin.fitcalculator.model;
 
+import net.iborodikhin.fitcalculator.Constants;
+
 public class Profile {
     protected int age;
     protected int height;
@@ -85,15 +87,15 @@ public class Profile {
     }
 
     public long getProteinCalculated() {
-        return Math.round(1.5 * weight);
+        return Math.round(Constants.PROTEINS_PER_KG * weight);
     }
 
     public long getFatCalculated() {
         if (isMale) {
-            return Math.round(80.0 * weight / 100);
+            return Math.round(Constants.FATS_PER_KG_MALE * weight);
         }
 
-        return Math.round(60.8 * weight / 100);
+        return Math.round(Constants.FATS_PER_KG_FEMALE * weight);
     }
 
     public long getCarbsCalculated() {

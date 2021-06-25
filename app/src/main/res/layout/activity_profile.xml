@@ -33,8 +33,6 @@
         android:hint="Желаемый вес"
         android:inputType="number" />
 
-
-
     <RadioGroup
         android:id="@+id/gender"
         android:layout_width="match_parent"
